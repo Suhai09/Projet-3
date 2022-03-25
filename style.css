@@ -3,7 +3,7 @@
     --mauve:#9356DC;
     --rose: #FF79DA ;
     --bleu: #99E2D0;
-    --gris-clair: #f7f7f7;
+    --gris-clair: #f6f7f7;
 }
 
 *{
@@ -40,8 +40,8 @@ header h1 {
     align-items: center;
     font-weight: bolder;
     justify-content: center;
-    background: #e5e4e4;
-    box-shadow: inset 0px 11px 21px -20px grey;
+    background: #eaeaea;
+    box-shadow: inset 0px 14px 8px -15px grey;
 }
 
 header h2 {
@@ -122,7 +122,7 @@ ul {
 }
 
 li {
-    box-shadow: 4px 7px 9px -5px #c5c5c5;
+    box-shadow: 4px 7px 9px -5px #f6f7f7;
     border-radius: 20px;
     background-color: var(--gris-clair);
     height: 70px;
@@ -146,13 +146,20 @@ i.fa-solid {
 /***Second Section***/
 .second {
     background-color: var(--gris-clair);
+    padding-top: 35px;
+    padding-block-end: 35px;
+}
+
+.second h2 {
+    margin-left: 20px;
+
 }
 
 .second figure {
     box-shadow: 1px 1px 4px 2px #d5d3d3;
     background-color: white;
     border-radius: 20px;
-    margin: 10px;
+    margin: 13px;
     overflow: hidden;
     font-weight: 500;
     position: relative;
@@ -169,19 +176,20 @@ i.fa-solid {
 .second figcaption {
     font-size: 14px;
     line-height: 6px;
-    margin: 9px;
+    padding: 8px;
+    margin-bottom: 12px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .cards h3 {
     font-weight: 800;
 }
 
-.cards i {
-    display: flex;
-    justify-content: end;
+.heart {
     font-size: 25px;
+    margin-right: 10px;
 }
 
 figcaption p {
@@ -200,9 +208,29 @@ figcaption p {
     margin-right: 10px;
 }
 
+footer {
+    background-color:#323232;
+    color: white;
+    padding-bottom: 15px;
+}
 
+footer h4 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: inherit;
+}
 
+.footers {
+     display: flex;
+    margin-left: 25px;
+    flex-direction: column;
 
+}
+
+.foot-text {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+}
 
 
 
