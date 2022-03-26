@@ -1,0 +1,61 @@
+:root{
+    
+    --mauve:#9356DC;
+    --rose: #FF79DA ;
+    --bleu: #99E2D0;
+    --gris-clair: #f6f7f7;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+/******body******/
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+
+/***header***/
+.headers {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    margin-right: 70px;
+    font-family: 'Shrikhand', cursive;
+}
+
+.back {
+    font-size: 25px;
+}
+
+header img {
+    width: 100%;
+}
+
+
+
+/****section****/
+.first {
+    background-color: var(--gris-clair);
+    border: 1px solid var(--gris-clair);
+    border-radius: 50px 50px 0px 0px;
+}
+
+h1{
+    font-family: 'Shrikhand', cursive;
+    font-weight: 500;
+}
+
+.Title {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.heart {
+    font-size: 25px;
+}
