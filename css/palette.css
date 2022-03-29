@@ -39,12 +39,17 @@ body {
 
 
 /****section****/
+a {
+    text-decoration: none;
+    color: black;
+}
 .menu {
     position: relative;
     background-color: var(--gris-clair);
     border: 1px solid var(--gris-clair);
     border-radius: 50px 50px 0px 0px;
     margin-top: -55px;
+    padding: 10px;
 }
 
 h1{
@@ -69,7 +74,7 @@ section h4 {
     border-bottom: 3px solid var(--bleu);
     width: 12%;
     padding-bottom: 2%;
-    margin-left: 15px;
+    margin-left: 6px;
     font-size: 15px;
 }
 
@@ -99,7 +104,7 @@ section h4 {
     border-radius: 15px;
     line-height: 0;
     box-shadow: 1px 4px 15px -2px lightgrey;
-    margin: 10px;
+    margin-bottom: 20px;
 }
 
 button {
@@ -115,7 +120,7 @@ button {
 .button {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 35px;
 }
 
 /****footer****/
@@ -143,7 +148,7 @@ footer h4 {
     line-height: 0;
 }
 
-a {
+footer a {
     text-decoration: none;
     color: white;
 }
