@@ -32,17 +32,19 @@ body {
     font-size: 25px;
 }
 
-header img {
+.image img {
     width: 100%;
 }
 
 
 
 /****section****/
-.first {
+.menu {
+    position: relative;
     background-color: var(--gris-clair);
     border: 1px solid var(--gris-clair);
     border-radius: 50px 50px 0px 0px;
+    margin-top: -55px;
 }
 
 h1{
@@ -54,8 +56,103 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    font-size:18px;
 }
 
 .heart {
     font-size: 25px;
+}
+
+/****listes****/
+section h4 {
+    font-weight: 500;
+    border-bottom: 3px solid var(--bleu);
+    width: 12%;
+    padding-bottom: 2%;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.name-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-top: -9px;
+    font-size: 15px;
+}
+
+.price {
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.list h3 {
+    margin-left: 5px;
+    font-size: 17px;
+}
+
+.list {
+    border: solid white;
+    background-color: white;
+    border-radius: 15px;
+    line-height: 0;
+    box-shadow: 1px 4px 15px -2px lightgrey;
+    margin: 10px;
+}
+
+button {
+    background: linear-gradient( #FF79DA ,#9356DC);
+    color: white;
+    border-radius: 50px;
+    width: 195px;
+    height: 52px;
+    font-size: 16px;
+    border: inherit;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/****footer****/
+footer {
+    background-color:#323232;
+    color: white;
+    padding-bottom: 15px;
+}
+
+footer h4 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: inherit;
+}
+
+.footers {
+    display: flex;
+    margin-left: 25px;
+    flex-direction: column;
+
+}
+
+.foot-text {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.foot-text p {
+    margin-left: 10px;
+}
+
+.foot {
+    line-height: 5px;
+    font-size: 13px;
 }
