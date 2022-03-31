@@ -260,6 +260,79 @@ footer h4 {
 
 
 @media screen and (min-width: 992px) {
-  
+
+    header h1 {
+        font-size: xxx-large;
+    }
+
+    .theheader{
+        font-size: 27px;
+    }
+
+    header h2 {
+        font-size: 33px;
+
+    }
+
+    header button {
+        width: 242px;
+        height: 71px;
+        font-size: 20px;
+    }
+
+    .headers {
+         height: 345px;
+    }
+
+
+    .first h2 {
+        text-align: center;
+        font-size: 33px;
+    }
+
+    ul {
+        flex-direction: inherit;
+        font-size: 23px;
+    }
+
+    .cards {
+        font-size: 21px;
+    }
+
+   .second figure img {
+        height: 550px;
+   }
+
+   .second figure {
+    width: 800px;
+   }
+
+   .second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .second h2 {
+       margin: inherit;
+       font-size: 45px;
+   }
+   figcaption p {
+        height: 60px;
+        width: 170px;
+        font-size: 28px;
+   }
+
+   .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 22px;
+    }
+
+    footer h4 {
+        text-align: center;
+        font-size: 40px;
+    }
 
 }
