@@ -120,8 +120,8 @@ button {
 button:hover{
     color: #fff;
     cursor: pointer;
-    background-image: linear-gradient(#ff4a62, #d10fd8);
-    box-shadow: 0 4px 15px 0 #ff4a62 ;
+    box-shadow: 0 4px 15px 8px white;
+    filter: brightness(1.1);
 }
 
 .button {
