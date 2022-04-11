@@ -18,6 +18,51 @@ body {
     margin: 0;
 }
 
+.loader-spinner {
+    width: 56px;
+    height: 56px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    border: 9px solid;
+    border-color: var(--mauve);
+    border-right-color: var(--rose);
+    animation: spinner 3s infinite linear;
+ }
+
+ .container-site {
+     animation: page 3s linear;
+ }
+ 
+ @keyframes page{
+    0% {
+        opacity: 0; 
+    }
+
+    100% {
+        opacity: 1;
+    }
+ }
+
+
+ @keyframes spinner {
+    to {
+       transform: rotate(1turn);
+    }
+
+    0% {
+        opacity: 1; 
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -131,6 +176,10 @@ li {
     justify-content: center;
     margin: 8px;
     position: relative;
+}
+
+.lightpurple {
+    background-color: rgba(246, 229, 255, 0.73);
 }
 
 i.fa-solid.fa-store {
