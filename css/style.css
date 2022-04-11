@@ -239,7 +239,43 @@ i.fa-solid {
 .heart {
     font-size: 25px;
     margin-right: 10px;
+    position: relative;
 }
+
+.heartfull {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(#FF79DA ,#9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    opacity: 0;     
+}
+
+.heartfull:active{
+    animation: heart 1s ease-in-out;
+    opacity: 1;
+    cursor:default;
+    pointer-events: none;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(0%);
+    }
+
+
+    50% {
+        transform: scale(50%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+
+}
+
+
+
 
 figcaption p {
     border: 1px solid #99E2D0;
@@ -343,6 +379,11 @@ footer h4 {
 
     .cards {
         font-size: 21px;
+    }
+
+    .heartfull:hover{
+        animation: heart 1s ease-in-out;
+        opacity: 1;
     }
 
    .second figure img {
