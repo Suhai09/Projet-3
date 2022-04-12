@@ -31,7 +31,8 @@ body {
     border: 9px solid;
     border-color: var(--mauve);
     border-right-color: var(--rose);
-    animation: spinner 3s infinite linear;
+    animation: spinner 2s linear;
+    opacity: 0;
  }
 
  .container-site {
@@ -62,6 +63,7 @@ body {
         opacity: 0;
     }
 }
+
 
 a {
     text-decoration: none;
