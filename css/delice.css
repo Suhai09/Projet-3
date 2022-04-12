@@ -169,6 +169,54 @@ footer a {
     font-size: 13px;
 }
 
+.list {
+    -webkit-animation: list 1.1s linear forwards;
+	animation: list 1.1s linear forwards;
+}
+
+@keyframes list {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+              opacity: 0%;
+    }
+
+    30% {
+        -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+              opacity: 20%;
+    }
+
+    60% {
+        -webkit-transform: scaleY(0.7);
+              transform: scaleY(0.7);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+              opacity: 20%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+              opacity: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 992px) {
     .image img {
