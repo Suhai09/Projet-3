@@ -375,6 +375,12 @@ footer h4 {
         font-size: 33px;
     }
 
+    .number{
+        width: 30px;
+        height: 30px;
+        align-items: inherit;
+    }
+
     ul {
         flex-direction: inherit;
         font-size: 23px;
@@ -384,51 +390,45 @@ footer h4 {
         font-size: 21px;
     }
 
+    .heart {
+        margin-left: 18px;
+    }
+
     .heartfull:hover {
-        -webkit-animation: scale-up-bottom 0.4s ease-out both;
-	    animation: scale-up-bottom 0.4s ease-out both;
+        -webkit-animation: slide-fwd-center 0.45s linear both;
+	    animation: slide-fwd-center 0.45s linear both;
         opacity: 1;
     }
 
-    @keyframes scale-up-bottom {
+    @keyframes slide-fwd-center {
         0% {
-          -webkit-transform: scale(0.5);
-                  transform: scale(0.5);
-          -webkit-transform-origin: 50% 100%;
-                  transform-origin: 50% 100%;
-                
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+                  opacity: 0;
         }
         100% {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-          -webkit-transform-origin: 50% 100%;
-                  transform-origin: 50% 100%;
+          -webkit-transform: translateZ(160px);
+                  transform: translateZ(160px);
+                  opacity: 1;
         }
-      }
+    }
+      
+
+    .second{
+        padding-block-end: 120px;
+    }
+
+    .second h2 {
+        text-align: center;
+        font-size: 30px;
+    }
     
-   .second figure img {
-        height: 550px;
-   }
-
-   .second figure {
-    width: 800px;
-   }
-
-   .second {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   }
-
-   .second h2 {
-       margin: inherit;
-       font-size: 45px;
-   }
-   figcaption p {
-        height: 60px;
-        width: 170px;
-        font-size: 28px;
-   }
+    .all-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+ 
 
    .footer {
         display: flex;
