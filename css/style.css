@@ -36,7 +36,7 @@ body {
  }
 
  .container-site {
-     animation: page 3s linear;
+    animation: page 3s linear;
  }
  
  @keyframes page{
@@ -242,6 +242,8 @@ i.fa-solid {
     font-size: 25px;
     margin-right: 10px;
     position: relative;
+    pointer-events: none;
+	cursor: default;
 }
 
 .heartfull {
@@ -257,8 +259,6 @@ i.fa-solid {
 .heartfull:active{
     animation: heart 1s ease-in-out;
     opacity: 1;
-    cursor:default;
-    pointer-events: none;
 }
 
 @keyframes heart {
@@ -384,11 +384,28 @@ footer h4 {
         font-size: 21px;
     }
 
-    .heartfull:hover{
-        animation: heart 1s ease-in-out;
+    .heartfull:hover {
+        -webkit-animation: scale-up-bottom 0.4s ease-out both;
+	    animation: scale-up-bottom 0.4s ease-out both;
         opacity: 1;
     }
 
+    @keyframes scale-up-bottom {
+        0% {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+          -webkit-transform-origin: 50% 100%;
+                  transform-origin: 50% 100%;
+                
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: 50% 100%;
+                  transform-origin: 50% 100%;
+        }
+      }
+    
    .second figure img {
         height: 550px;
    }
