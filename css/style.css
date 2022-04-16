@@ -242,43 +242,20 @@ i.fa-solid {
     font-size: 25px;
     margin-right: 10px;
     position: relative;
-    pointer-events: none;
-	cursor: default;
 }
 
 .heartfull {
     position: absolute;
-    top: 0;
-    background: linear-gradient(#FF79DA ,#9356DC);
-    background-clip: text ;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-    opacity: 0;     
+    transform: scale(0);
+    transition-duration: 1s;
+    background-image: linear-gradient(#FF79DA ,#9356DC); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+} 
+
+.heart:hover .heartfull{
+    transform: scale(1);
 }
-
-.heartfull:active{
-    animation: heart 1s ease-in-out;
-    opacity: 1;
-}
-
-@keyframes heart {
-    0% {
-        transform: scale(0%);
-    }
-
-
-    50% {
-        transform: scale(50%);
-    }
-
-    100% {
-        transform: scale(100%);
-    }
-
-}
-
-
-
 
 figcaption p {
     border: 1px solid #99E2D0;
@@ -394,26 +371,6 @@ footer h4 {
         margin-left: 18px;
     }
 
-    .heartfull:hover {
-        -webkit-animation: slide-fwd-center 0.45s linear both;
-	    animation: slide-fwd-center 0.45s linear both;
-        opacity: 1;
-    }
-
-    @keyframes slide-fwd-center {
-        0% {
-          -webkit-transform: translateZ(0);
-                  transform: translateZ(0);
-                  opacity: 0;
-        }
-        100% {
-          -webkit-transform: translateZ(160px);
-                  transform: translateZ(160px);
-                  opacity: 1;
-        }
-    }
-      
-
     .second{
         padding-block-end: 120px;
     }
@@ -427,6 +384,10 @@ footer h4 {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+    }
+
+    .all-list a {
+        width: 100%;
     }
  
 
