@@ -31,7 +31,7 @@ body {
     border: 9px solid;
     border-color: var(--mauve);
     border-right-color: var(--rose);
-    animation: spinner 2s linear;
+    animation: spinner 3s linear;
     opacity: 0;
  }
 
@@ -42,6 +42,10 @@ body {
  @keyframes page{
     0% {
         opacity: 0; 
+    }
+
+    50% {
+        opacity: 0;
     }
 
     100% {
