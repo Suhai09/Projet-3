@@ -93,23 +93,19 @@ section h4 {
     font-size: 15px;
 }
 
-.name-price {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 5px;
-    margin-top: -9px;
-    font-size: 15px;
+.caption {
+    line-height: 0.5;
 }
 
 .price {
     font-family: sans-serif;
-    font-size: 14px;
-    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content:flex-end ;
 }
 
 .list h3 {
-    margin-left: 5px;
     font-size: 17px;
 }
 
@@ -117,11 +113,13 @@ section h4 {
     border: solid white;
     background-color: white;
     border-radius: 15px;
-    line-height: 0;
     box-shadow: 1px 4px 15px -2px lightgrey;
     margin-bottom: 20px;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
     animation: list 0.8s forwards;
-    opacity: 0;
+    position: relative;
 }
 
 .all-list .list {
@@ -141,33 +139,37 @@ section h4 {
 }
 
 .check {
-    height: 70px;
-    width: 60px;
-    opacity: 0;
+    height: 73px;
+    right: -3px;
     background-color: #99E2D0;
-    margin-left: 25px;
-    margin-right: -70px;
+    width: 0;
     border-radius: 0 10px 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.7s ease-in-out;
+    position: absolute;
 }
 
-.check p {
+.check i {
     color: white;
-    font-size: 20px;
+    font-size: 35px;
     opacity: 0;
-    transition: all 0.7s ease-in-out;
+}
+
+.list:hover .price {
+    margin-right: 90px;
+    transition: 1s;
 }
 
 .list:hover .check {
-    opacity: 1;
+    width: 80px;
     margin-right: 0px;
+    transition-duration: 1s;
 }
 
-.list:hover .check p {
+.list:hover .check i {
     opacity: 1;
+    transition-duration: 1s;
     transform: rotate(-360deg);
 }
 
@@ -252,7 +254,7 @@ footer a {
     }
 
     .list{
-    width: 50%;
+    width: 40%;
     margin: auto;
     margin-top: 20px;
     }
