@@ -94,15 +94,21 @@ section h4 {
 }
 
 .caption {
-    line-height: 0.5;
+    flex-grow: 1;
+    padding-left: 5px;
+    width: 150px;
+    line-height: 1;
+}
+
+.caption h3, .caption p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .price {
-    font-family: sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    display: flex;
-    justify-content:flex-end ;
+    width: 50px;
+    align-self: flex-end;
 }
 
 .list h3 {
@@ -110,15 +116,12 @@ section h4 {
 }
 
 .list {
-    border: solid white;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 1px 4px 15px -2px lightgrey;
-    margin-bottom: 20px;
     display: flex;
-    align-items:center ;
-    justify-content: space-between;
-    position: relative;
+    box-shadow: 3px 3px 8px grey;;
+    margin-top: 10px;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: white;
 }
 
 .list1 {
@@ -150,39 +153,24 @@ section h4 {
 }
 
 .check {
-    height: 73px;
-    right: -3px;
-    background-color: #99E2D0;
     width: 0;
-    border-radius: 0 10px 10px 0;
+    background-color: var(--bleu);
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    transition-duration: 1s;
 }
 
-.check i {
+.fa-circle-check{
     color: white;
-    font-size: 35px;
-    opacity: 0;
+    font-size: xx-large;
 }
 
-.list:hover .price {
-    margin-right: 90px;
-    transition: 1s;
-}
 
-.list:hover .check {
+.list:hover .check{
     width: 80px;
-    margin-right: 0px;
-    transition-duration: 1s;
 }
 
-.list:hover .check i {
-    opacity: 1;
-    transition-duration: 1s;
-    transform: rotate(-360deg);
-}
 
 button {
     background: linear-gradient( #FF79DA ,#9356DC);
@@ -245,9 +233,6 @@ footer a {
     line-height: 5px;
     font-size: 13px;
 }
-
-
-
 
 
 
