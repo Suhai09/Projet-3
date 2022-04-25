@@ -171,6 +171,11 @@ section h4 {
     width: 80px;
 }
 
+.list:hover .fa-circle-check{
+    transform: rotate(360deg);
+    transition: 0.4s ease-in-out;
+}
+
 
 button {
     background: linear-gradient( #FF79DA ,#9356DC);
