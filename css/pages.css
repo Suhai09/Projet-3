@@ -64,6 +64,7 @@ h1{
     font-size:18px;
 }
 
+/****Heart***/
 .heart {
     font-size: 25px;
 }
@@ -140,6 +141,7 @@ section h4 {
     opacity: 0;
 }
 
+/****Keyframes-List****/
 @keyframes list {
     0% {
         transform: translateY(20px);
@@ -152,6 +154,7 @@ section h4 {
     }
 }
 
+/****Check****/
 .check {
     width: 0;
     background-color: var(--bleu);
@@ -176,7 +179,7 @@ section h4 {
     transition: 0.4s ease-in-out;
 }
 
-
+/****Boutton***/
 button {
     background: linear-gradient( #FF79DA ,#9356DC);
     color: white;

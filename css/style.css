@@ -18,6 +18,7 @@ body {
     margin: 0;
 }
 
+/****Loader-Spinner***/
 .loader-spinner {
     width: 56px;
     height: 56px;
@@ -33,13 +34,15 @@ body {
     border-right-color: var(--rose);
     animation: spinner 3s linear;
     opacity: 0;
- }
+}
 
+/****Container-Site***/
  .container-site {
     animation: page 3s linear;
- }
+}
  
- @keyframes page{
+/*****Keyframe-Page-Load**/
+@keyframes page{
     0% {
         opacity: 0; 
     }
@@ -51,10 +54,10 @@ body {
     100% {
         opacity: 1;
     }
- }
+}
 
-
- @keyframes spinner {
+/****Keyframe-Loader-spinner***/
+@keyframes spinner {
     to {
        transform: rotate(1turn);
     }
@@ -107,6 +110,7 @@ header h4 {
     text-align: center;
 }
 
+/***Boutton***/
 .button {
     display: flex;
     justify-content: center;
@@ -143,6 +147,7 @@ header button {
     align-items: center;
 }
 
+/****List***/
 .list {
     display: flex;
     align-items: center;
@@ -242,6 +247,7 @@ i.fa-solid {
     font-weight: 800;
 }
 
+/****Heart****/
 .heart {
     font-size: 25px;
     margin-right: 10px;
