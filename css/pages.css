@@ -127,6 +127,7 @@ section h4 {
 
 .list1 {
     animation: list 2s forwards;
+    animation-delay: 0.2s;
 }
 
 .list2{
@@ -137,7 +138,7 @@ section h4 {
 
 .list3{
     animation: list 6s forwards;
-    animation-delay: 0.3s;
+    animation-delay: 0.5s;
     opacity: 0;
 }
 
@@ -252,15 +253,21 @@ footer a {
 
 @media screen and (min-width: 992px) {
     .image img {
-    height: 335px;
-    image-rendering: pixelated;
-    object-fit: cover;
+        height: 335px;
+        image-rendering: pixelated;
+        object-fit: cover;
+    }
+
+    .all-list {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
     }
 
     .list{
-    width: 40%;
-    margin: auto;
-    margin-top: 20px;
+        width: 270px;
+        margin: auto;
+        margin-top: 20px;
     }
 
     section h4{
